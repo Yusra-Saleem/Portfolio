@@ -2,26 +2,60 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* Example of custom styles */
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-mont), sans-serif;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+.background {
+  background-image: url('/background-image.png');
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+ @media (min-width: 320px) and (max-width: 768px) {
+  .background {
+    background-image: url('/bg-image2.png');
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: left;
+    padding-top: 100px; 
+    padding-bottom: 50px;
   }
+} 
+
+
+h1 {
+    color: #333;
+    font-size: 2rem;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fade-in {
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+
+  /* Progress bar animation */
+@keyframes fillBar {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.progress-animation {
+  animation: fillBar 2s ease-in-out forwards;
 }
