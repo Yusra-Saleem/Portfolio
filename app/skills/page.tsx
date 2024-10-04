@@ -15,7 +15,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import { faClipboardCheck, faChartLine } from '@fortawesome/free-solid-svg-icons';
 import { faPaintBrush } from '@fortawesome/free-solid-svg-icons';
-import { faTrello, faMedium, faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faTrello , faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faCode } from '@fortawesome/free-solid-svg-icons';
 
 // Skills Data
