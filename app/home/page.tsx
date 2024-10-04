@@ -1,4 +1,3 @@
-
 "use client";
 
 import React from 'react';
@@ -28,7 +27,7 @@ const HeroSection: React.FC = () => {
       <div className="text-left text-[#002244] md:w-[800px] mt-10 mx-4 md:mt-0">
         <p className="text-lg md:text-2xl mt-2 font-semibold">Hello,</p>
         <h2 className="text-3xl md:text-5xl font-extrabold">
-          I'm <span className="text-pink-400" style={{ textShadow: '2px 2px 2px #002244' }}>Yusra Saleem</span>
+          I&apos;m <span className="text-pink-400" style={{ textShadow: '2px 2px 2px #002244' }}>Yusra Saleem</span>
         </h2>
         <p className="text-lg md:text-2xl mt-2 font-medium">
           I am passionate about creating stunning web applications with a focus on responsive design, modern UI/UX, and clean code. Let&apos;s build something great together!
@@ -59,5 +58,4 @@ const HeroSection: React.FC = () => {
 };
 
 export default HeroSection;
-
 
